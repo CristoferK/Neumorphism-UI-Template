@@ -1,0 +1,194 @@
+body {
+	background: #f2f3f7;
+	font-family: sans-serif;
+	padding-top: 20px;
+	padding-left: 20px;
+	display: flex;
+}
+a {
+	padding: 20px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #5184a2;
+	font-size: 18px;
+	border-radius: 40px;
+	box-shadow: -2px -2px 8px rgba(255,255,255,1),
+	-2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	2px 2px 8px rgba(0,0,0,0.15);
+	position: absolute;
+} 
+a:hover {
+	box-shadow: 
+	inset -2px -2px 8px rgba(255,255,255,1),
+	inset -2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	inset 2px 2px 8px rgba(0,0,0,0.15);
+
+}
+a:hover span {
+	display: inline-block;
+	transform: scale(0.98);
+}
+.cube {
+	border-radius: 20px;
+	box-shadow: 
+	inset -2px -2px 8px rgba(255,255,255,1),
+	inset -2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	inset 2px 2px 8px rgba(0,0,0,0.15);
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	position: absolute;
+	left: 260px;
+	top: 10px;
+}
+.cube2 {
+	border-radius: 20px;
+	box-shadow:  -2px -2px 8px rgba(255,255,255,1),
+	-2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	2px 2px 8px rgba(0,0,0,0.15);
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	position: absolute;
+	left: 480px;
+	top: 10px;
+}
+.cube2 img {
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+input[type="checkbox"] {
+	position: relative;
+	left: 700px;
+	width: 80px;
+	height: 40px;
+	-webkit-appearance: none;
+	background: #f2f3f7;
+	outline: none;
+	border-radius: 20px;
+	box-shadow: 
+	inset -2px -2px 8px rgba(255,255,255,1),
+	inset -2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	inset 2px 2px 8px rgba(0,0,0,0.15);
+	transition: .5s;
+}
+input:checked[type="checkbox"] {
+	background: #03a9f4;
+}
+input[type="checkbox"]:before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	top: 0px;
+	left: 0;
+	background: #f2f3f7;
+	transition: .5s;
+	transform: scale(1.1);
+	box-shadow:  -2px -2px 8px rgba(255,255,255,1),
+	-2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	2px 2px 8px rgba(0,0,0,0.15);
+}
+input:checked[type="checkbox"]:before {
+	left: 40px;
+}
+.range {
+	position: absolute;
+	left: 850px;
+	top: 35px;
+	-webkit-appearance: none;
+	background: #f2f3f7;
+	width: 200px;
+	height: 30px;
+	outline: none;
+	border-radius: 15px;
+	overflow: hidden;
+	
+	box-shadow: 
+	inset -2px -2px 8px rgba(255,255,255,1),
+	inset -2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	inset 2px 2px 8px rgba(0,0,0,0.15);
+
+}
+.range::-webkit-slider-thumb {
+	background: #03a9f4;
+	-webkit-appearance: none;
+	box-shadow:  -2px -2px 8px rgba(255,255,255,1),
+	-2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	2px 2px 8px rgba(0,0,0,0.15);
+	height: 28px;
+	width: 28px;
+	border-radius: 30px;
+	transform: scale(1.1);
+	z-index: 999;
+}
+.search {
+	position: absolute;
+	top: 260px;
+	box-shadow: 
+	inset -2px -2px 8px rgba(255,255,255,1),
+	inset -2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	inset 2px 2px 8px rgba(0,0,0,0.15);
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	height: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #5184a2;
+	font-size: 18px;
+	width: 200px;
+	background: #f2f3f7;
+	padding: 10px;
+	font-size: 10px;
+}
+.like {
+	position: absolute;
+	top: 260px;
+	left: 260px;
+	padding: 20px 20px;
+	font-weight: 500;
+	color: #5184a2;
+	font-size: 30px;
+	border-radius: 40px;
+	box-shadow: -2px -2px 8px rgba(255,255,255,1),
+	-2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	2px 2px 8px rgba(0,0,0,0.15);
+	position: absolute;
+	outline: none;
+	border: none;
+	transition: .5s;
+} 
+.like:active {
+	box-shadow: 
+	inset -2px -2px 8px rgba(255,255,255,1),
+	inset -2px -2px 12px rgba(255,255,255,0.5),
+	inset 2px 2px 4px rgba(255,255,255,0.1),
+	inset 2px 2px 8px rgba(0,0,0,0.15);
+	transition: .5s;
+
+}
+.like:active span {
+	transition: .5s;
+	display: inline-block;
+	transform: scale(0.98);
+	border-bottom: 2px solid #5184a2;
+}
